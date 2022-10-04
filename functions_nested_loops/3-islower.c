@@ -3,12 +3,12 @@
 /**
  * _islower -  checks for lowercase character
  * Return: 0 or 1
- * c islower
+ * @c:: the argument
  */
 
 int _islower(int c)
 {
-	if (islower(c))
+	if (islower(c) > 0)
 	{
 		return (1);
 	}
