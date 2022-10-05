@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * print_last_digit -  print the last digit of a number
- * Return: return the last digit of a number
- * @n: the argument
+ * add -  sum of two integers
+ * Return: return the sum
+ * @x: the argument
+ * @y: the argument
  */
 
 int add(int x, int y)
 {
-    return (x + y);
+	return (x + y);
 }
