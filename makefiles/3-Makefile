@@ -2,10 +2,10 @@ CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-RM = rm -f
+RM = rm -r
 
 all :
-	$(CC) $(OBJ) -o $(NAME)
+	$(CC) $(SRC) -o $(NAME)
 
 clean :
 	$(RM) '*~' $(NAME)
