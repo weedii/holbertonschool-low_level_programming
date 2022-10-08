@@ -14,25 +14,46 @@ int main(void)
 
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
+			if (i == 100)
+			{
+				continue;
+			}
+			putchar(' ');
 			i++;
 		}
 		if (i % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
+			if (i == 100)
+			{
+				continue;
+			}
+			putchar(' ');
 			i++;
 		}
 		if (i % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
+			if (i == 100)
+			{
+				continue;
+			}
+			putchar(' ');
 			i++;
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d", i);
+			if (i == 100)
+			{
+				continue;
+			}
+			putchar(' ');
 			i++;
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
