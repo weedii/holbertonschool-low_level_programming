@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_triangle -  prints a square with #, followed by a new line
+ * print_triangle -   prints a triangle with #, followed by a new line
  * @size: the argument
  */
 
