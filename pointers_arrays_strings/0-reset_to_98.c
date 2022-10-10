@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *main - function main
- *Return: 0
+ *reset_to_98 - updates the value it points to to 98
+ *@n: pointer point to an int
  */
 
 void reset_to_98(int *n)
 {
-    *n = 98;
+	*n = 98;
 }
