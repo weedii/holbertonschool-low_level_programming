@@ -28,6 +28,4 @@ void rev_string(char *s)
 		deb++;
 		fin--;
 	}
-
-	printf("\n");
 }
