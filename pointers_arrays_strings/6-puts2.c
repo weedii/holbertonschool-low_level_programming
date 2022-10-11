@@ -7,23 +7,11 @@
 
 void puts2(char *str)
 {
-	int i, x;
-	char *saut;
-	saut = str;
+	int i;
 
-	x = strlen(str);
-	i = 0;
-
-	while ((*saut != '\0') && (i <= x - 1))
+	for (i = 0; str[i] != '\0'; i += 2)
 	{
-		if ((*saut == 72))
-		{
-			continue;
-		}
-
-		_putchar(*saut);
-		saut += 2;
-		i++;
+		_putchar(str[i]);
 	}
 
 	_putchar('\n');
