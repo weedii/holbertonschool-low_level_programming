@@ -21,5 +21,6 @@ char *_strcpy(char *dest, char *src)
 		ch1++;
 		ch2++;
 	}
+	printf("\n");
 	return (ch1);
 }
