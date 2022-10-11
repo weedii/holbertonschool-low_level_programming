@@ -18,7 +18,7 @@ void puts2(char *str)
 		while (*saut != '\0')
 		{
 
-			if (*saut == 'H')
+			if (*saut == 72)
 			{
 				continue;
 			}
