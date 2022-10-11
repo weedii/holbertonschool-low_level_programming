@@ -17,9 +17,9 @@ char *_strcpy(char *dest, char *src)
 	while (*ch2 != '\0')
 	{
 		*ch1 = *ch2;
-		printf("%c", *ch2);
 		ch1++;
 		ch2++;
+		printf("%c", *ch2);
 	}
 
 	return (ch1);
