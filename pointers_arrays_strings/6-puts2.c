@@ -12,19 +12,15 @@ void puts2(char *str)
 	saut = str;
 
 	x = strlen(str);
+	i = 0;
 
-	for (i = 0; i < x - 1; i += 2)
+	while ((*saut != '\0') && (i <= x - 1))
 	{
-		while (*saut != '\0')
-		{
 
-			if (*saut == 72)
-			{
-				continue;
-			}
-			_putchar(*saut);
-			saut += 2;
-		}
+		_putchar(*saut);
+		saut += 2;
+		i++;
 	}
+
 	_putchar('\n');
 }
