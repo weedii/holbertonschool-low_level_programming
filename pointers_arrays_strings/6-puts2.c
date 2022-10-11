@@ -16,6 +16,10 @@ void puts2(char *str)
 
 	while ((*saut != '\0') && (i <= x - 1))
 	{
+		if ((*saut == 46) && (*saut == 92) && (*saut != 48))
+		{
+			continue;
+		}
 
 		_putchar(*saut);
 		saut += 2;
