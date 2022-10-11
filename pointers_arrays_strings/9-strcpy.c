@@ -9,20 +9,10 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	char *ch1, *ch2;
+	int i, a;
 
-	ch1 = dest;
-	ch2 = src;
-
-	while (*ch2 != '\0')
-	{
-		*ch1 = *ch2;
-		printf("%c", *ch2);
-		ch1++;
-		ch2++;
-	}
-	*ch1 = *ch2;
-	printf("%c", *ch2);
-
-	return (ch1);
+	a = strlen(src);
+	for (i = 0; i <= a; i++)
+		dest[i] = src[i];
+	return (dest);
 }
