@@ -10,21 +10,19 @@
 char *_strpbrk(char *s, char *accept)
 {
 
-	if ((s == NULL) && (accept == NULL))
+	if ((s == NULL) || (accept == NULL))
 	{
 		return (NULL);
 	}
-	else
+
+	while (*s != '\0')
 	{
-		while (*s != '\0')
+		while (*s == *accept)
 		{
-			while (*s == *accept)
-			{
-				return (s - 1);
-			}
-			accept++;
-			s++;
+			return (s - 1);
 		}
-		return (s);
+		accept++;
+		s++;
 	}
+	return (s);
 }
