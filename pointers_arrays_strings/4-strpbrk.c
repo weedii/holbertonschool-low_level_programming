@@ -11,11 +11,8 @@ char *_strpbrk(char *s, char *accept)
 {
 	int len, len1, i, j, k;
 
-	for (len = 0; s[len] != '\0'; len++)
-		;
-
-	for (len1 = 0; accept[len1] != '\0'; len1++)
-		;
+	len = strlen(s);
+	len1 = strlen(accept);
 
 	for (i = 0; i < len; i++)
 	{
