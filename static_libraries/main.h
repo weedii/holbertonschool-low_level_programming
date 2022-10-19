@@ -1,5 +1,5 @@
-#if !defined(PROJECT_MODULE_H)
-#define PROJECT_MODULE_H
+#ifndef C_functions_H
+#define C_functions_H
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
