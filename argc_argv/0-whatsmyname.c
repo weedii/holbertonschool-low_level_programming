@@ -15,10 +15,10 @@ int main(int argc, char const *argv[])
 	{
 		if (argv[0] != argv[i])
 		{
-			printf("%s \n", argv[i]);
+			printf("%s\n", argv[i]);
 		}
 		else
-			printf("%s \n", argv[0]);
+			printf("%s\n", argv[0]);
 	}
 	return (0);
 }
