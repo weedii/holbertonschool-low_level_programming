@@ -9,23 +9,26 @@
 
 int main(int argc, char const *argv[])
 {
-    int i, s = 0, j;
+	int i, s = 0, j;
 
-    if (argc < 3)
-        printf("0\n");
+	if (argc < 3)
+	{
+		printf("0\n");
+		return (0);
+	}
 
-    for (i = 1; i < argc; i++)
-    {
-        for (j = 0; argv[i][j] != '\0'; j++)
-        {
-            if (argv[i][j] > '9' || argv[i][j] < '0')
-            {
-                printf("Error\n");
-                return (1);
-            }
-        }
-        s += atoi(argv[i]);
-    }
-    printf("%d\n", s);
-    return (0);
+	for (i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] > '9' || argv[i][j] < '0')
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		s += atoi(argv[i]);
+	}
+	printf("%d\n", s);
+	return (0);
 }
