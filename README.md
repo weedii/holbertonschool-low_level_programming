@@ -15,3 +15,4 @@
 | [C - Recursion](./recursion/)                                           | C - Recursion                                       |
 | [C - Static libraries](./static_libraries/)                             | C - Static libraries                                |
 | [C - argc, argv](./argc_argv/)                                          | C - argc, argv                                      |
+| [C - malloc, free](./malloc_free/)                                      | C - malloc, free                                    |
