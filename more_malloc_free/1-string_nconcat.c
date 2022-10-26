@@ -21,18 +21,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	len_s1 = strlen(s1);
 	len_s2 = strlen(s2);
-	len_concat = len_s1 + len_s2 + 1;
+	len_concat = len_s1 + len_s2;
 
-	ch = malloc(sizeof(char) * len_concat);
+	if (n >= len_s2)
+		ch = malloc(sizeof(char) * len_concat);
+	else
+		ch = malloc(sizeof(char) * n);
 
 	if (ch == NULL)
 		return (NULL);
 
 	for (i = 0; i < len_concat; i++)
 		ch[i] = s1[i];
-
-	for (i = 0; ch[i] != '\0'; i++)
-		;
 
 	if (n >= len_s2)
 	{
