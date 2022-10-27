@@ -2,9 +2,9 @@
 
 ---
 
-. Macros and how to use them
-. The most common predefined macros
-. Include guard your header files
+- Macros and how to use them
+- The most common predefined macros
+- Include guard your header files
 
 ---
 
@@ -19,5 +19,12 @@
 
 - A header file that defines a macro named PI as an abbreviation for the token 3.14159265359.
 - File: 1-pi.h
+
+---
+
+2. File name
+
+- A program that prints the name of the file it was compiled from, followed by a new line.
+- File: 2-main.c
 
 ---
