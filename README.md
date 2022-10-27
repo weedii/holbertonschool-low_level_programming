@@ -16,3 +16,5 @@
 | [C - Static libraries](./static_libraries/)                             | C - Static libraries                                |
 | [C - argc, argv](./argc_argv/)                                          | C - argc, argv                                      |
 | [C - malloc, free](./malloc_free/)                                      | C - malloc, free                                    |
+| [C - More malloc, free](./more_malloc_free/)                            | C - More malloc, free                               |
+| [C - Preprocessor](./preprocessor/)                                     | C - Preprocessor, Macro, Header files               |
