@@ -28,3 +28,15 @@
 - File: 2-main.c
 
 ---
+
+3. Function-like macro
+
+- A function-like macro ABS(x) that computes the absolute value of a number x.
+- File: 3-function_like_macro.h
+
+---
+
+4. SUM
+
+- A function-like macro SUM(x, y) that computes the sum of the numbers x and y.
+- File: 4-sum.h
