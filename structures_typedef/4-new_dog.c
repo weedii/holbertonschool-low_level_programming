@@ -14,7 +14,10 @@ char *str_malloc(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	ch = malloc(sizeof(char) * (strlen(str)));
+	for (i = 0; str[i] != '\0'; i++)
+		;
+
+	ch = malloc(i + 1);
 
 	if (ch == NULL)
 		return (NULL);
