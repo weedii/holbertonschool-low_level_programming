@@ -1,5 +1,31 @@
 #include "dog.h"
 
+char *_str(char *str)
+{
+	char *p;
+	int i = 0, j = 0;
+
+	if (str == NULL)
+		return (NULL);
+
+	while (*(str + i) != '\0')
+		i++;
+
+	p = malloc((i + 1) * sizeof(char));
+
+	if (p == NULL)
+		return (NULL);
+
+	while (str[j] != '\0')
+	{
+		p[j] = str[j];
+		j++;
+	}
+	p[j] = '\0';
+
+	return (p);
+}
+
 /**
  * new_dog - creates a new dog
  * @name:  pointer to the name in the structure
@@ -14,18 +40,24 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *name_copy, *owner_copy;
 
 	dog = malloc(sizeof(dog_t));
-	name_copy = malloc(sizeof(name));
-	owner_copy = malloc(sizeof(owner));
 
 	if (dog == NULL)
 		return (NULL);
 
-	dog->name = name;
+	dog->name = _str(name);
+	if (!dog->name)
+	{
+		free(dog);
+		return (NULL);
+	}
 	dog->age = age;
-	dog->owner = owner;
+	dog->owner = _str(dog->owner);
+	if (!dog->owner)
+	{
+		free(dog->name);
+		free(dog);
+		return (NULL);
+	}
 
 	return (dog);
-	free(dog);
-	free(name_copy);
-	free(owner_copy);
 }
