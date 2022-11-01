@@ -1,36 +1,6 @@
 #include "dog.h"
 
 /**
- * str_malloc - allocate string in memory
- * @str:   pointer to a string
- * Return: pointer to the allocated string
- */
-
-char *str_malloc(char *str)
-{
-	char *ch;
-	int i;
-
-	if (str == NULL)
-		return (NULL);
-
-	for (i = 0; str[i] != '\0'; i++)
-		;
-
-	ch = malloc(i + 1);
-
-	if (ch == NULL)
-		return (NULL);
-
-	for (i = 0; str[i] != '\0'; i++)
-		ch[i] = str[i];
-
-	ch[i] = '\0';
-
-	return (ch);
-}
-
-/**
  * new_dog - creates a new dog
  * @name:  pointer to the name in the structure
  * @age:   pointer to the age in the structure
@@ -41,25 +11,28 @@ char *str_malloc(char *str)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
+	int len_name, len_owner;
 
 	dog = malloc(sizeof(dog_t));
 
 	if (dog == NULL)
 		return (NULL);
-
-	dog->name = str_malloc(name);
-	if (dog->name == NULL)
-	{
-		free(dog);
+	if (name == NULL || owner == NULL)
 		return (NULL);
-	}
 
-	dog->owner = str_malloc(owner);
-	if (dog->owner == NULL)
+	len_name = strlen(name);
+	dog->name = malloc(sizeof(len_name + 1));
+	dog->name = strcpy(dog->name, name);
+	if (!dog->name)
+		free(dog);
+
+	len_owner = strlen(owner);
+	dog->owner = malloc(sizeof(len_owner + 1));
+	dog->owner = strcpy(dog->owner, owner);
+	if (!dog->owner)
 	{
 		free(dog->name);
 		free(dog);
-		return (NULL);
 	}
 
 	dog->age = age;
