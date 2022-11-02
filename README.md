@@ -19,3 +19,5 @@
 | [C - More malloc, free](./more_malloc_free/)                            | C - More malloc, free                               |
 | [C - Preprocessor](./preprocessor/)                                     | C - Preprocessor, Macro, Header files               |
 | [C - Structures, typedef](./structures_typedef/)                        | C - Structures, typedef                             |
+| [C - Function pointers](./function_pointers/)                           | C - Function pointers                               |
+|                                                                         |
