@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
 		exit(100);
 	}
 
-	if (!calc)
+	if (!calc || strlen(argv[2]) != 1)
 	{
 		printf("Error\n");
 		exit(99);
