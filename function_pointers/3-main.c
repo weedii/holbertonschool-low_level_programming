@@ -22,14 +22,14 @@ int main(int argc, char const *argv[])
 		exit(98);
 	}
 
-	if (atoi(argv[3]) < 0)
+	if (atoi(argv[3]) <= 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
 	res = calc(atoi(argv[1]), atoi(argv[3]));
-	if (res == 0)
+	if (!calc)
 	{
 		printf("Error\n");
 		exit(99);
