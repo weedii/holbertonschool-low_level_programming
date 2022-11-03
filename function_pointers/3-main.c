@@ -22,18 +22,18 @@ int main(int argc, char const *argv[])
 		exit(98);
 	}
 
-	if (atoi(argv[3]) <= 0)
+	if (atoi(argv[3]) <= 0 && (*argv[2] == '/' || *argv[2] == '%'))
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	res = calc(atoi(argv[1]), atoi(argv[3]));
 	if (!calc)
 	{
 		printf("Error\n");
 		exit(99);
 	}
+	res = calc(atoi(argv[1]), atoi(argv[3]));
 	printf("%d\n", res);
 
 	return (0);
