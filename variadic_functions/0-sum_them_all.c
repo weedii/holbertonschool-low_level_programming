@@ -20,6 +20,7 @@ int sum_them_all(const unsigned int n, ...)
 			sum += va_arg(countptr, int);
 		}
 		return (sum);
+		va_end(countptr);
 	}
 	return (0);
 }
