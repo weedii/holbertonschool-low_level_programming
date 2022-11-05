@@ -43,8 +43,6 @@ void print_all(const char *const format, ...)
 			separator = ", ";
 		}
 		va_end(ch);
-
-		putchar('\n');
 	}
 	putchar('\n');
 }
