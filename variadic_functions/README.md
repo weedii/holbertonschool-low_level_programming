@@ -9,7 +9,7 @@
 * Prototype: int sum_them_all(const unsigned int n, ...);
 * If n == 0, return 0
 
-- File: 0-sum_them_all.c
+- File: [0-sum_them_all.c](./0-sum_them_all.c)
 
 ---
 
@@ -23,7 +23,7 @@
 * If separator is NULL, don’t print it
 * Print a new line at the end of your function
 
-- File: 1-print_numbers.c
+- File: [1-print_numbers.c](./1-print_numbers.c)
 
 ---
 
@@ -38,7 +38,7 @@
 * If one of the string is NULL, print (nil) instead
 * Print a new line at the end of your function
 
-- File: 2-print_strings.c
+- File: [2-print_strings.c](./2-print_strings.c)
 
 ---
 
@@ -57,4 +57,4 @@
 * 2 if
 * Print a new line at the end of your function
 
-- File: 3-print_all.c
+- File: [3-print_all.c](./3-main.c)
