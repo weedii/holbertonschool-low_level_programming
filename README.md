@@ -20,4 +20,6 @@
 | [C - Preprocessor](./preprocessor/)                                     | C - Preprocessor, Macro, Header files               |
 | [C - Structures, typedef](./structures_typedef/)                        | C - Structures, typedef                             |
 | [C - Function pointers](./function_pointers/)                           | C - Function pointers                               |
+| [C - Variadic functions](./variadic_functions/)                         | C - Variadic functions                              |
+|  |
 |                                                                         |
