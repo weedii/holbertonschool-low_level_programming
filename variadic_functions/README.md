@@ -57,4 +57,4 @@
 * 2 if
 * Print a new line at the end of your function
 
-- File: [3-print_all.c](./3-main.c)
+- File: [3-print_all.c](./3-print_all.c)
