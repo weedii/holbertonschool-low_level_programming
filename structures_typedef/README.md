@@ -10,7 +10,7 @@
 * age, type = float
 * owner, type = char \*
 
-- File: dog.h
+- File: [dog.h](./dog.h)
 
 ---
 
@@ -20,7 +20,7 @@
 
 * Prototype: void init_dog(struct dog *d, char *name, float age, char \*owner);
 
-- File: 1-init_dog.c
+- File: [1-init_dog.c](./1-init_dog.c)
 
 ---
 
@@ -33,7 +33,7 @@
 * If an element of d is NULL, print (nil) instead of this element. (if name is NULL, print Name: (nil))
 * If d is NULL print nothing.
 
-- File: 2-print_dog.c
+- File: [2-print_dog.c](./2-print_dog.c)
 
 ---
 
@@ -41,7 +41,7 @@
 
 - Define a new type dog_t as a new name for the type struct dog.
 
-- File: dog.h
+- File: [dog.h](./dog.h)
 
 ---
 
@@ -53,7 +53,7 @@
 * You have to store a copy of name and owner
 * Return NULL if the function fails
 
-- File: 4-new_dog.c
+- File: [4-new_dog.c](./4-new_dog.c)
 
 ---
 
@@ -63,4 +63,4 @@
 
 * Prototype: void free_dog(dog_t \*d);
 
-- File: 5-free_dog.c
+- File: [5-free_dog.c](./5-free_dog.c)
