@@ -10,7 +10,7 @@
 * Returns NULL if size = 0
 * Returns a pointer to the array, or NULL if it fails
 
-- File: 0-create_array.c
+- File: [0-create_array.c](./0-create_array.c)
 
 ---
 
@@ -23,7 +23,7 @@
 * Returns NULL if str = NULL
 * On success, the \_strdup function returns a pointer to the duplicated string. It returns NULL if insufficient memory was available
 
-- File: 1-strdup.c
+- File: [1-strdup.c](./1-strdup.c)
 
 ---
 
@@ -36,7 +36,7 @@
 * if NULL is passed, treat it as an empty string
 * The function should return NULL on failure
 
-- File: 2-str_concat.c
+- File: [2-str_concat.c](./2-str_concat.c)
 
 ---
 
@@ -49,7 +49,7 @@
 * The function should return NULL on failure
 * If width or height is 0 or negative, return NULL
 
-- File: 3-alloc_grid.c
+- File: [3-alloc_grid.c](./3-alloc_grid.c)
 
 ---
 
@@ -60,4 +60,4 @@
 * Prototype: void free_grid(int \*\*grid, int height);
 * Note that we will compile with your alloc_grid.c file. Make sure it compiles.
 
-- File: 4-free_grid.c
+- File: [4-free_grid.c](./4-free_grid.c)
