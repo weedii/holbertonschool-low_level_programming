@@ -10,7 +10,7 @@
 * Returns a pointer to the allocated memory
 * if malloc fails, the malloc_checked function should cause normal process termination with a status value of 98
 
-- File: 0-malloc_checked.c
+- File: [0-malloc_checked.c](./0-malloc_checked.c)
 
 ---
 
@@ -24,7 +24,7 @@
 * If n is greater or equal to the length of s2 then use the entire string s2
 * if NULL is passed, treat it as an empty string
 
-- File: 1-string_nconcat.c
+- File: [1-string_nconcat.c](./1-string_nconcat.c)
 
 ---
 
@@ -40,7 +40,7 @@
 * If malloc fails, then \_calloc returns NULL
 * FYI: The standard library provides a different function: calloc. Run man calloc to learn more.
 
-- File: 2-calloc.c
+- File: [2-calloc.c](./2-calloc.c)
 
 ---
 
@@ -54,4 +54,4 @@
 * If min > max, return NULL
 * If malloc fails, return NULL
 
-- File: 3-array_range.c
+- File: [3-array_range.c](./3-array_range.c)
