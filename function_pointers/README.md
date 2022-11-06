@@ -8,7 +8,7 @@
 
 * Prototype: void print_name(char *name, void (*f)(char \*));
 
-- File: 0-print_name.c
+- File: [0-print_name.c](./0-print_name.c)
 
 ---
 
@@ -20,7 +20,7 @@
 * where size is the size of the array
 * and action is a pointer to the function you need to use
 
-- File: 1-array_iterator.c
+- File: [1-array_iterator.c](./1-array_iterator.c)
 
 ---
 
@@ -35,7 +35,7 @@
 * If no element matches, return -1
 * If size <= 0, return -1
 
-- File: 2-int_index.c
+- File: [2-int_index.c](./2-int_index.c)
 
 ---
 
@@ -96,4 +96,4 @@ ion pointers$ ./calc 1024 '\*' 98
 Error
 ```
 
-- Files: 3-main.c, 3-op_functions.c, 3-get_op_func.c, 3-calc.h
+- Files: [3-main.c](./3-main.c), [3-op_functions.c](./3-op_functions.c), [3-get_op_func.c](./3-get_op_func.c), [3-calc.h](./3-calc.h)
