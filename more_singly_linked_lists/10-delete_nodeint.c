@@ -23,6 +23,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	if (*head)
 	{
+		/*test if Insert a node at the beginning of a list*/
 		if (index == 0)
 		{
 			*head = first->next;
