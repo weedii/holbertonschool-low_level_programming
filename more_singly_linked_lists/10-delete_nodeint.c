@@ -9,8 +9,17 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *first = *head, *delete;
-	unsigned int i;
+	listint_t *first = *head, *delete, *lengh;
+	unsigned int i, count = 0;
+
+	/*test if index outside the list*/
+	while (lengh)
+	{
+		lengh = lengh->next;
+		count++;
+	}
+	if (index > count)
+		return (-1);
 
 	if (*head)
 	{
