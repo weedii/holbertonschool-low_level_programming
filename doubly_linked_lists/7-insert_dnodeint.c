@@ -25,8 +25,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	/*test if Insert a node at the beginning of a list*/
 	if (idx == 0)
 	{
-		add_dnodeint(h, n);
-		return (*h);
+		return (add_dnodeint(h, n));
 	}
 	ptr = *h;
 	while (i <= idx)
@@ -41,8 +40,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		if (i == idx)
 		{
 			/*test if Insert a node at the end of a list*/
-			add_dnodeint_end(h, n);
-			return (*h);
+			return (add_dnodeint_end(h, n));
 		}
 	}
 	new_node->n = n;
