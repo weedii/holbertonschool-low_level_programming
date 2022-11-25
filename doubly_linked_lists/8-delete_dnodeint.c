@@ -10,12 +10,20 @@
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	size_t ta7 = 0;
-	dlistint_t *ptr = *head, *first = *head;
+	size_t ta7 = 0, count = 0;
+	dlistint_t *ptr = *head, *first = *head, *lengh = *head;
+
+	/*test if index outside the list*/
+	while (lengh)
+	{
+		lengh = lengh->next;
+		count++;
+	}
+	if (index > count)
+		return (-1);
 
 	if (*head)
 	{
-		/*test if index at the beginning of a list*/
 		if (index == 0)
 		{
 			if (first->next)
