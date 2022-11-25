@@ -6,9 +6,9 @@
  * Return: -1 on failure
  */
 
-int check_index(dlistint_t *lengh)
+int check_index(dlistint_t *lengh, unsigned int index)
 {
-	size_t count = 0;
+	unsigned int count = 0;
 
 	while (lengh)
 	{
@@ -30,10 +30,10 @@ int check_index(dlistint_t *lengh)
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	size_t ta7 = 0, count = 0;
+	size_t ta7 = 0;
 	dlistint_t *ptr = *head, *first = *head, *lengh = *head;
 
-	check_index(lengh);
+	check_index(lengh, index);
 	if (*head)
 	{
 		if (index == 0)
