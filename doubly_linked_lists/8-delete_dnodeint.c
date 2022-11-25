@@ -3,6 +3,7 @@
 /**
  * check_index - function that check the index
  * @lengh: pointer to the first node
+ * @index: the index of the node that should be deleted
  * Return: -1 on failure
  */
 
