@@ -1,6 +1,26 @@
 #include "lists.h"
 
 /**
+ * check_index - function that check the index
+ * @lengh: pointer to the first node
+ * Return: -1 on failure
+ */
+
+int check_index(dlistint_t *lengh)
+{
+	size_t count = 0;
+
+	while (lengh)
+	{
+		lengh = lengh->next;
+		count++;
+	}
+	if (index > count)
+		return (-1);
+	return (1);
+}
+
+/**
  * delete_dnodeint_at_index - function that deletes the node
  *                  at index index of a dlistint_t linked list
  * @head:  pointer to the first node
@@ -13,15 +33,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	size_t ta7 = 0, count = 0;
 	dlistint_t *ptr = *head, *first = *head, *lengh = *head;
 
-	/*test if index outside the list*/
-	while (lengh)
-	{
-		lengh = lengh->next;
-		count++;
-	}
-	if (index > count)
-		return (-1);
-
+	check_index(lengh);
 	if (*head)
 	{
 		if (index == 0)
