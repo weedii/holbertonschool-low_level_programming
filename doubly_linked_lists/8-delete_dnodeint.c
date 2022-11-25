@@ -18,7 +18,6 @@ int check_index(dlistint_t *lengh, unsigned int index)
 	}
 	if (index > count)
 		return (-1);
-	return (1);
 }
 
 /**
