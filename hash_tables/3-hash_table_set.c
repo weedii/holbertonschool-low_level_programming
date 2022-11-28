@@ -12,7 +12,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
     if (ht)
     {
-
         new_element->key = strdup(key);
         new_element->value = strdup(value);
 
@@ -22,10 +21,18 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
             ht->array[index] = new_element;
         else
         {
+            while (ht->array[index])
+            {
+                if (ht->array[index]->key == key)
+                {
+                    free(ht->array[index]->value);
+                    ht->array[index]->value = strdup(value);
+                }
+                ht->array[index] = ht->array[index]->next;
+            }
             new_element->next = ht->array[index];
             ht->array[index] = new_element;
         }
-
         return (1);
     }
     return (0);
