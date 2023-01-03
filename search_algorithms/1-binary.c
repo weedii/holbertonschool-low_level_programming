@@ -3,23 +3,25 @@
 /***/
 int binary_search(int *array, size_t size, int value)
 {
-    return (binarysearch(array, 0, size - 1, value));
-}
+    int low, high, mid, i;
 
-/***/
-int binarysearch(int *array, int start, int size, int value)
-{
-    int mid = start + (size - start) / 2;
-
-    if (size >= start)
+    low = 0;
+    high = size - 1;
+    while (low <= high)
     {
-        if (array[mid] == value)
+        printf("Searching in array:%d", array[low]);
+        for (i = low + 1; i < high + 1; i++)
+            printf(", %d", array[i]);
+        printf("\n");
+
+        mid = (low + high) / 2;
+
+        if (value == array[mid])
             return (mid);
-
-        if (array[mid] > value)
-            return (binarysearch(array, start, mid - 1, value));
-
-        return (binarysearch(array, mid + 1, size, value));
+        if (value < array[mid])
+            high = mid - 1;
+        else
+            low = mid + 1;
     }
     return (-1);
 }
