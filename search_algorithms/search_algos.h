@@ -7,5 +7,7 @@
 #include <stdbool.h>
 
 int linear_search(int *array, size_t size, int value);
+int binary_search(int *array, size_t size, int value);
+int binarysearch(int *array, int start, int size, int value);
 
 #endif
